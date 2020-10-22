@@ -1,0 +1,25 @@
+{
+	"name": "blobcreatdtrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyBooksfromblobtosqlpipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/output/blobs/",
+			"blobPathEndsWith": "*.csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/d81ca25f-17d1-43b1-8e8f-684e38e1c807/resourceGroups/LNTRG/providers/Microsoft.Storage/storageAccounts/saumyaacc",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

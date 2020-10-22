@@ -1,0 +1,16 @@
+{
+	"name": "sqldesttable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabasels",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "books"
+		}
+	}
+}
